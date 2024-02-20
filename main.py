@@ -1,18 +1,18 @@
 import streamlit as st
 import langchain_helper as helper
-st.title("Emotion Category Detector")
+st.title("Emotion generation from Text")
 
 
-st.markdown("<div style='margin-bottom:20px'></div>", unsafe_allow_html=True)
+st.markdown("<div style='margin-bottom:30px'></div>", unsafe_allow_html=True)
 
-human_text = st.text_area(label="Please enter how you feel about the class:", height=150)
+human_text = st.text_area(label="Please enter how you felt about the class:", height=150)
 
-st.markdown("<div style='margin-bottom:20px'></div>", unsafe_allow_html=True)
+st.markdown("<div style='margin-bottom:30px'></div>", unsafe_allow_html=True)
 
 is_searched = st.button(label="Detect Emotion")
 
 
-st.markdown("<div style='margin-bottom:20px'></div>", unsafe_allow_html=True)
+st.markdown("<div style='margin-bottom:30px'></div>", unsafe_allow_html=True)
 
 if is_searched:
     if human_text.strip() != "":
